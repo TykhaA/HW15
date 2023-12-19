@@ -11,6 +11,7 @@ function handleCreate(evt) {
 }
 function createBoxes(amount) {
   let valueSize = 30;
+  destroyBoxes();
   for (let i = 0; i < amount; i += 1){
     boxes.insertAdjacentHTML('beforeend', `<div style="width:${valueSize}px; height:${valueSize}px; background-color:${getRandomHexColor()}; margin: 10px 0"></div>`);
     valueSize += 10; 
